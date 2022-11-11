@@ -1,0 +1,7 @@
+init
+global
+status
+user.name
+user.email
+add
+commit
