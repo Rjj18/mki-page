@@ -1,2 +1,0 @@
-Essa é a Aula 08 da Turma 01 de AWS. E estamos praticando git.
-E estamos treinando trocas de branch´s.
