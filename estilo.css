@@ -10,19 +10,15 @@ flex-direction: row;
 width: 98vw;
 height: 12vh;
 background: #FFFFFF;
-justify-content: space-between
+justify-content: space-between;
 }
 
-
-.tituloh{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.menuimg {
+    margin: 0 0 0 auto;
 }
 
-.cabecalho>#logoh{
-    height: 12vh;
-    width: 12vw;
-    margin: 0;
+img {
+    width: 100%;
+    height: 100%; 
+    object-fit: contain;
 }
