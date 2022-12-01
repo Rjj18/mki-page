@@ -1,8 +1,13 @@
+.container  {
+    width: 99vw;
+    height: 100vh;
+    margin: auto;
+}
 .cabecalho {
 border: solid;
 display: flex;
 flex-direction: row;
-width: 100vw;
+width: 98vw;
 height: 12vh;
 background: #FFFFFF;
 justify-content: space-between
