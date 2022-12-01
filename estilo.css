@@ -1,1 +1,23 @@
+.cabecalho {
+border: solid;
+display: flex;
+flex-direction: row;
+width: 100vw;
+height: 12vh;
+background: #FFFFFF;
+justify-content: space-between
+}
 
+
+.tituloh{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho>#logoh{
+    height: 12vh;
+    width: 12vw;
+    margin: 0;
+}
