@@ -4,21 +4,82 @@
     margin: auto;
 }
 .cabecalho {
-border: solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 28px;
+    width: 360px;
+    height: 60px;
+}
+
+#imglogo {
+
+box-sizing: border-box;
+width: 42.98px;
+height: 40.93px;
+}
+  
+#menulogo {
+
+width: 32.32px;
+height: 28.5px;
+}
+
+.quem-somos{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 8px 4px;
+gap: 15px;
+width: 360px;
+height: 500px;
+background: #343131;
+}
+
+.quem-somos>h3{
+font-family: 'Inter';
+font-style: normal;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+color: #FBF7F7;
+}
+
+.quem-somos>p{
+font-family: 'Inter';
+font-style: normal;
+font-size: 8px;
+line-height: 10px;
+text-align: center;
+color: #F3E9E9;
+}
+
+#imgquem{
+width: 327px;
+height: 185px;
+}
+
+.botao-lg{
 display: flex;
 flex-direction: row;
-width: 98vw;
-height: 12vh;
-background: #FFFFFF;
-justify-content: space-between;
+justify-content: center;
+align-items: center;
+padding: 4px;
+width: 144px;
+height: 39px;
+background: #3182AF;
+border-radius: 10px;
 }
 
-.menuimg {
-    margin: 0 0 0 auto;
-}
-
-img {
-    width: 100%;
-    height: 100%; 
-    object-fit: contain;
+.botao-lg>h3{
+font-family: 'Inter';
+font-size: 12px;
+color: #FFFFFF;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
 }
