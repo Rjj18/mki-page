@@ -1,7 +1,12 @@
-.container  {
-    width: 99vw;
+body {
+    width: 100vw;
     height: 100vh;
     margin: auto;
+    background: #343131;
+}
+
+p {
+    color:#FFFFFF
 }
 .cabecalho {
     display: flex;
@@ -11,18 +16,17 @@
     padding: 0px;
     gap: 28px;
     width: 360px;
-    height: 60px;
+    height: 8vh;
+    background-color: white;
 }
 
 #imglogo {
-
 box-sizing: border-box;
-width: 42.98px;
-height: 40.93px;
+width: 44px;
+height: 40px;
 }
   
 #menulogo {
-
 width: 32.32px;
 height: 28.5px;
 }
@@ -33,17 +37,14 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 padding: 8px 4px;
-gap: 15px;
-width: 360px;
-height: 500px;
-background: #343131;
+gap: 16px;
+width: 99vw;
 }
 
 .quem-somos>h3{
 font-family: 'Inter';
 font-style: normal;
 font-size: 24px;
-line-height: 29px;
 text-align: center;
 color: #FBF7F7;
 }
@@ -52,14 +53,15 @@ color: #FBF7F7;
 font-family: 'Inter';
 font-style: normal;
 font-size: 8px;
-line-height: 10px;
 text-align: center;
 color: #F3E9E9;
 }
 
 #imgquem{
-width: 327px;
-height: 185px;
+width: 320px;
+height: 180px;
+text-align: center;
+
 }
 
 .botao-lg{
@@ -67,9 +69,8 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-padding: 4px;
-width: 144px;
-height: 39px;
+width: 40vw;
+height: 4vh;
 background: #3182AF;
 border-radius: 10px;
 }
@@ -78,8 +79,25 @@ border-radius: 10px;
 font-family: 'Inter';
 font-size: 12px;
 color: #FFFFFF;
-/* Inside auto layout */
 flex: none;
 order: 0;
 flex-grow: 0;
+
+}
+
+.botao-lg>a{
+    font-family: 'Inter';
+    font-size: 12px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    text-decoration: none;
+    }
+
+
+.rodape{
+    background-color: white;
+    height: 8vh;
+   
 }
