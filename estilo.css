@@ -15,7 +15,6 @@ p {
     align-items: center;
     padding: 0px;
     gap: 28px;
-    width: 360px;
     height: 8vh;
     background-color: white;
 }
@@ -38,7 +37,6 @@ justify-content: center;
 align-items: center;
 padding: 8px 4px;
 gap: 16px;
-width: 99vw;
 }
 
 .quem-somos>h3{
@@ -60,15 +58,13 @@ color: #F3E9E9;
 #imgquem{
 width: 320px;
 height: 180px;
-text-align: center;
-
 }
 
 .botao-lg{
 display: flex;
-flex-direction: row;
 justify-content: center;
 align-items: center;
+align-self: center;
 width: 40vw;
 height: 4vh;
 background: #3182AF;
@@ -79,9 +75,6 @@ border-radius: 10px;
 font-family: 'Inter';
 font-size: 12px;
 color: #FFFFFF;
-flex: none;
-order: 0;
-flex-grow: 0;
 
 }
 
@@ -90,11 +83,20 @@ flex-grow: 0;
     font-size: 12px;
     color: #FFFFFF;
     flex: none;
-    order: 0;
-    flex-grow: 0;
     text-decoration: none;
     }
 
+.ap-projetos {
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+    padding: 8px;
+}
+
+.ap-projetos>h3 {
+    color:white;
+    text-align: center;
+}
 
 .rodape{
     background-color: white;
