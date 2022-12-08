@@ -2,7 +2,7 @@ body {
     width: 100vw;
     height: 100vh;
     margin: auto;
-    background: #343131;
+    background: black;
 }
 
 p {
@@ -86,17 +86,53 @@ color: #FFFFFF;
     text-decoration: none;
     }
 
-.ap-projetos {
+.ap-projetos, .contato {
     display: flex;
     flex-direction: column;
     gap:4px;
     padding: 8px;
 }
 
-.ap-projetos>h3 {
+.ap-projetos>h3, .contato>h2 {
     color:white;
     text-align: center;
 }
+
+.clientes {
+    display:grid;
+    grid-template-areas: 
+        "titulo titulo"
+        "imagem1 imagem2"
+        "imagem3 imagem4";
+}
+
+.clientes>h3 {
+    grid-area: titulo;
+    color:white;
+}
+
+.clientes :nth-child(2) {
+    grid-area: imagem1;
+}
+
+.clientes :nth-child(3) {
+    grid-area: imagem2;
+}
+
+.clientes :nth-child(4) {
+    grid-area: imagem3;
+}
+
+.clientes :nth-child(5) {
+    grid-area: imagem4;
+}
+
+.icones{
+    background-color: #FFFFFF;
+    width: 6rem;
+}
+
+
 
 .rodape{
     background-color: white;
