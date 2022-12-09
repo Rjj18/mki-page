@@ -1,21 +1,25 @@
+/* Variáveis de cores e tamanhos de fonte */
+
 :root {
     --cinza: rgb(55,63,69);
     --branco: white;
     --preto:black;
     --azul: #3182AF;
     --azul-escuro: rgb(2,24,59);
+    --titulo1: 2rem;
 }
 
+h1 {
+    font-size: 1.5rem !important;
+}
 
 .cabecalho {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    padding: 0px;
-    gap: 28px;
     height: 8vh;
-    background-color: white;
+    background-color: var(--branco);
 }
 
 #imglogo {
@@ -25,66 +29,60 @@ height: 40px;
 }
   
 #menulogo {
-width: 32.32px;
-height: 28.5px;
+width: 32px;
 }
 
 .quem-somos{
 display: flex;
 flex-direction: column;
+justify-content:space-evenly;
+align-items: center;
 background-image: url(img/fundo-quem.png);
+padding: 1rem;
+height: 100vh;
 }
 
-.quem-somos>h3{
-font-family: 'Inter';
-font-style: normal;
-font-size: 24px;
-text-align: center;
-color: #FBF7F7;
+.quem-somos>h1{
+font-size: var(--titulo1);
+color: var(--branco);
 }
 
 .quem-somos>p{
 font-family: 'Inter';
 font-style: normal;
-font-size: 8px;
-text-align: center;
-color: #F3E9E9;
+font-size: 1rem;
+color:var(--branco)
 }
 
+/* Configurações dos botões principais */
 
 .botao-lg{
 display: flex;
-margin: auto;
 padding: 0.7rem;
 background-color: var(--azul);
 border-radius: 10px;
 }
 
 .botao-lg>h3{
-font-family: 'Inter';
-font-size: 12px;
-color: #FFFFFF;
+font-size: 1rem;
+color: var(--branco);
 }
 
 .botao-lg>a{
-    font-family: 'Inter';
-    font-size: 12px;
-    color: #FFFFFF;
-    flex: none;
+    color: var(--branco);
     text-decoration: none;
     }
+
+
+
 
 .ap-projetos, .contato {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap:4px;
     padding: 8px;
     background-color: var(--cinza);
-}
-
-.ap-projetos>h3, .contato>h2 {
-    color:white;
-    text-align: center;
 }
 
 .clientes {
@@ -93,11 +91,6 @@ color: #FFFFFF;
         "titulo titulo"
         "imagem1 imagem2"
         "imagem3 imagem4";
-}
-
-.clientes>h3 {
-    grid-area: titulo;
-    color:white;
 }
 
 .clientes :nth-child(2) {
@@ -120,7 +113,6 @@ color: #FFFFFF;
     background-color: #FFFFFF;
     width: 6rem;
 }
-
 
 
 .rodape{
