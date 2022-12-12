@@ -1,4 +1,12 @@
+/* Fonte */
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Hind+Siliguri:wght@300&family=Raleway:wght@100&display=swap');
+
 /* Variáveis de cores e tamanhos de fonte */
+
+p, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Dosis', sans-serif !important;
+}
 
 :root {
     --cinza: rgb(55,63,69);
@@ -10,7 +18,7 @@
 }
 
 h1 {
-    font-size: 1.5rem !important;
+    font-size: 1rem !important;
 }
 
 .cabecalho {
@@ -47,7 +55,7 @@ font-size: var(--titulo1);
 color: var(--branco);
 }
 
-.quem-somos>p{
+.quem-somos>p, .secao-1>p{
 font-family: 'Inter';
 font-style: normal;
 font-size: 1rem;
@@ -76,7 +84,7 @@ color: var(--branco);
 
 
 
-.ap-projetos, .contato {
+.ap-projetos, .contato, .secao-1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,8 +122,6 @@ color: var(--branco);
     background-color: #FFFFFF;
     width: 6rem;
 }
-
-
 .rodape{
     display: flex;
     justify-content: center;
