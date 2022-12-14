@@ -4,8 +4,9 @@
 
 /* Variáveis de cores e tamanhos de fonte */
 
-p, h1, h2, h3, h4, h5, h6 {
+p, h1, h2, h3, h4, h5, h6, a {
     font-family: 'Dosis', sans-serif !important;
+    color: var(--branco);
 }
 
 :root {
@@ -18,7 +19,14 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 1rem !important;
+    font-size: 1.5rem !important;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
 }
 
 .cabecalho {
@@ -28,6 +36,10 @@ h1 {
     align-items: center;
     height: 8vh;
     background-color: var(--branco);
+}
+
+.cabecalho>h1 {
+    color: var(--preto);
 }
 
 #imglogo {
@@ -43,24 +55,14 @@ width: 32px;
 .quem-somos{
 display: flex;
 flex-direction: column;
-justify-content:space-evenly;
+justify-content:space-around;
 align-items: center;
+text-align: center;
 background-image: url(img/fundo-quem.png);
-padding: 1rem;
-height: 100vh;
+padding: 4px;
+height: 90vh;
 }
 
-.quem-somos>h1{
-font-size: var(--titulo1);
-color: var(--branco);
-}
-
-.quem-somos>p, .secao-1>p{
-font-family: 'Inter';
-font-style: normal;
-font-size: 1rem;
-color:var(--branco)
-}
 
 /* Configurações dos botões principais */
 
@@ -71,25 +73,30 @@ background-color: var(--azul);
 border-radius: 10px;
 }
 
-.botao-lg>h3{
-font-size: 1rem;
-color: var(--branco);
-}
-
 .botao-lg>a{
-    color: var(--branco);
     text-decoration: none;
     }
 
 
+/* divisão entre seção */
+
+.gap{
+    background-color: var(--branco);
+    width: 100vw;
+    height: 2px;
+}
 
 
-.ap-projetos, .contato, .secao-1 {
+/* Classes Principais */
+
+.ap-projetos {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     gap:4px;
     padding: 8px;
+    height: 25vh;
     background-color: var(--cinza);
 }
 
@@ -98,8 +105,21 @@ color: var(--branco);
     grid-template-areas: 
         "titulo titulo"
         "imagem1 imagem2"
-        "imagem3 imagem4";
-    
+        "imagem3 imagem4"; 
+justify-items: center;
+gap: 8px;
+padding: 8px;
+}
+
+.clientes>h3 {
+    text-align: center;
+    color: var(--preto);
+
+}
+
+.clientes :nth-child(1) {
+    grid-area: titulo;
+    grid-row: 3fr;
 }
 
 .clientes :nth-child(2) {
@@ -118,12 +138,134 @@ color: var(--branco);
     grid-area: imagem4;
 }
 
-.icones{
-    background-color: #FFFFFF;
-    width: 6rem;
-}
 .rodape{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+/* cards carrossel */
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+  
+  .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+  .fa-skype {
+    background: #00aff0;
+    color: white;
+  }
+  
+  .fa-android {
+    background: #a4c639;
+    color: white;
+  }
+  
+  .fa-dribbble {
+    background: #ea4c89;
+    color: white;
+  }
+  
+  .fa-vimeo {
+    background: #45bbff;
+    color: white;
+  }
+  
+  .fa-tumblr {
+    background: #2c4762;
+    color: white;
+  }
+  
+  .fa-vine {
+    background: #00b489;
+    color: white;
+  }
+  
+  .fa-foursquare {
+    background: #45bbff;
+    color: white;
+  }
+  
+  .fa-stumbleupon {
+    background: #eb4924;
+    color: white;
+  }
+  
+  .fa-flickr {
+    background: #f40083;
+    color: white;
+  }
+  
+  .fa-yahoo {
+    background: #430297;
+    color: white;
+  }
+  
+  .fa-soundcloud {
+    background: #ff5500;
+    color: white;
+  }
+  
+  .fa-reddit {
+    background: #ff5700;
+    color: white;
+  }
+  
+  .fa-rss {
+    background: #ff6600;
+    color: white;
+  }
