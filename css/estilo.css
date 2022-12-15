@@ -58,7 +58,7 @@ flex-direction: column;
 justify-content:space-around;
 align-items: center;
 text-align: center;
-background-image: url(img/fundo-quem.png);
+background-image: url(../img/fundo-quem.png);
 padding: 4px;
 height: 90vh;
 }
@@ -159,13 +159,21 @@ padding: 8px;
     text-align: center;
     color: var(--preto);
 }
+
+
+.info-card>p, .info-card>a {
+color: black; 
+align-self: center;
+text-decoration: none;
+}
+
+
 /* cards carrossel */
 
 .card-projetos>h2 {
     text-align: center;
     color: var(--preto);
 }
-
 .card-container {
     display: flex;
     flex-direction: row;

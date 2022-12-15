@@ -1,0 +1,31 @@
+.mki-info {
+    display: grid;
+    grid-template-areas:
+    "titulo titulo"
+    "endereco endereco"
+    "telefone email";
+
+justify-items: center;
+}
+
+.mki-info :nth-child(1){
+grid-area: titulo;    
+}
+
+.mki-info :nth-child(2){
+    grid-area: endereco;    
+}
+
+.mki-info :nth-child(3){
+        grid-area: telefone;
+}
+
+.mki-info :nth-child(4){
+    grid-area: email;
+}
+
+.info-card {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: baseline;
+}
