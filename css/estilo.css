@@ -100,6 +100,15 @@ border-radius: 10px;
     background-color: var(--cinza);
 }
 
+.ap-title {
+    border: solid 1px white;
+    width: 40vw;
+    height: 5vh;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .clientes {
     display:grid;
     grid-template-areas: 
@@ -152,7 +161,32 @@ padding: 8px;
 }
 /* cards carrossel */
 
+.card-projetos>h2 {
+    text-align: center;
+    color: var(--preto);
+}
+
 .card-container {
     display: flex;
     flex-direction: row;
+    overflow: scroll;
+    padding-top: 16px;
+    gap: 16px;
+}
+
+.card{
+    margin: 4px;
+}
+
+.card-image {
+    margin: 4px;
+}
+.card-title>h3 {
+    color: var(--preto);
+    text-align: center;
+}
+
+.card-text>p {
+    color: var(--preto);
+    text-align: center;
 }
