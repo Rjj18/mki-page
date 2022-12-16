@@ -22,35 +22,17 @@ h1 {
     font-size: 1.5rem !important;
 }
 
-.container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 4px;
-}
 
-.cabecalho {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 8vh;
-    background-color: var(--branco);
-}
 
 .cabecalho>h1 {
     color: var(--preto);
 }
 
 #imglogo {
-box-sizing: border-box;
 width: 44px;
 height: 40px;
 }
   
-#menulogo {
-width: 32px;
-}
 
 .quem-somos{
 display: flex;
@@ -90,70 +72,21 @@ border-radius: 10px;
 /* Classes Principais */
 
 .ap-projetos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    gap:4px;
-    padding: 8px;
-    height: 25vh;
     background-color: var(--cinza);
 }
 
 .ap-title {
     border: solid 1px white;
-    width: 40vw;
-    height: 5vh;
-    display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.clientes {
-    display:grid;
-    grid-template-areas: 
-        "titulo titulo"
-        "imagem1 imagem2"
-        "imagem3 imagem4"; 
-justify-items: center;
-gap: 8px;
-padding: 8px;
-}
+
 
 .clientes>h3 {
     text-align: center;
     color: var(--preto);
-
 }
 
-.clientes :nth-child(1) {
-    grid-area: titulo;
-    grid-row: 3fr;
-}
 
-.clientes :nth-child(2) {
-    grid-area: imagem1;
-}
-
-.clientes :nth-child(3) {
-    grid-area: imagem2;
-}
-
-.clientes :nth-child(4) {
-    grid-area: imagem3;
-}
-
-.clientes :nth-child(5) {
-    grid-area: imagem4;
-}
-
-.rodape{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-}
 
 .rodape>p, .rodape>h3 {
     text-align: center;
@@ -174,13 +107,6 @@ text-decoration: none;
     text-align: center;
     color: var(--preto);
 }
-.card-container {
-    display: flex;
-    flex-direction: row;
-    overflow: scroll;
-    padding-top: 16px;
-    gap: 16px;
-}
 
 .card{
     margin: 4px;
@@ -198,80 +124,3 @@ text-decoration: none;
     color: var(--preto);
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Links inside the navbar */
-.cabecalho a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* The dropdown container */
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  /* Dropdown button */
-  .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-  }
-  
-  /* Add a red background color to navbar links on hover */
-  .cabecalho a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-  }
-  
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  /* Add a grey background color to dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
