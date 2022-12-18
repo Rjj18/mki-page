@@ -1,11 +1,12 @@
 /* Fonte */
 
 @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Hind+Siliguri:wght@300&family=Raleway:wght@100&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Open+Sans:wght@300&display=swap');
 /* Variáveis de cores e tamanhos de fonte */
 
-p, h1, h2, h3, h4, h5, h6, a {
-    font-family: 'Dosis', sans-serif !important;
+p, a {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: var(--paragrafos) !important;
     color: var(--branco);
 }
 
@@ -15,16 +16,12 @@ p, h1, h2, h3, h4, h5, h6, a {
     --preto:black;
     --azul: #3182AF;
     --azul-escuro: rgb(2,24,59);
-    --titulo1: 2rem;
+    --titulos: 1rem;
+    --paragrafos: 0.8rem;
 }
-
-h1 {
-    font-size: 1.5rem !important;
-}
-
-
 
 .cabecalho>h1 {
+    font-size:1.2rem;
     color: var(--preto);
 }
 
