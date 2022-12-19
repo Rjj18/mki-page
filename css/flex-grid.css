@@ -28,17 +28,18 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    gap:4px;
+    gap:16px;
     padding: 8px;
-    height: 25vh;
+    height: 40%;
 }
 
 .ap-title{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40vw;
-    height: 5vh;
+    width: 60%;
+    padding: 8px;
+    margin-top: 8px;
 }
 
 /* grid clientes */

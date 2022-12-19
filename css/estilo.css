@@ -1,12 +1,11 @@
-/* Fonte */
+/* Fontes */
 
 @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Hind+Siliguri:wght@300&family=Raleway:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Open+Sans:wght@300&display=swap');
 /* Variáveis de cores e tamanhos de fonte */
 
-p, a {
+p, a, h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif !important;
-    font-size: var(--paragrafos) !important;
     color: var(--branco);
 }
 
@@ -16,12 +15,14 @@ p, a {
     --preto:black;
     --azul: #3182AF;
     --azul-escuro: rgb(2,24,59);
-    --titulos: 1rem;
-    --paragrafos: 0.8rem;
+    --titulo1: 24px;
+    --titulo2: 20px;
+    --textosecao: 16px;
+    --textomenor:12px;
 }
 
 .cabecalho>h1 {
-    font-size:1.2rem;
+    font-size:var(--titulo1);
     color: var(--preto);
 }
 
@@ -42,14 +43,18 @@ padding: 4px;
 height: 90vh;
 }
 
+.quem-somos>p {
+    font-size: var(--textosecao);
+}
+
 
 /* Configurações dos botões principais */
 
 .botao-lg{
 display: flex;
-padding: 0.7rem;
+padding: 8px;
 background-color: var(--azul);
-border-radius: 10px;
+border-radius: 8px;
 }
 
 .botao-lg>a{
@@ -70,31 +75,44 @@ border-radius: 10px;
 
 .ap-projetos {
     background-color: var(--cinza);
+    text-align: justify;
 }
 
 .ap-title {
     border: solid 1px white;
+    border-radius: 8px;
 }
 
+.ap-projetos>h3 {
+    font-size: var(--titulo2);
+}
 
+.ap-projetos>p {
+    font-size: var();
+}
 
 .clientes>h3 {
     text-align: center;
     color: var(--preto);
 }
 
+.rodape>h3 {
+    font-size: var(--textosecao);
+}
 
-
+.rodape>p{
+    font-size: var(--textomenor);
+}
 .rodape>p, .rodape>h3 {
     text-align: center;
     color: var(--preto);
 }
 
-
 .info-card>p, .info-card>a {
 color: black; 
 align-self: center;
 text-decoration: none;
+font-size: var(--textomenor);
 }
 
 
@@ -103,6 +121,8 @@ text-decoration: none;
 .card-projetos>h2 {
     text-align: center;
     color: var(--preto);
+    font-size: var(--titulo2);
+    margin-top: 8px;
 }
 
 .card{
@@ -115,9 +135,11 @@ text-decoration: none;
 .card-title>h3 {
     color: var(--preto);
     text-align: center;
+    font-size: var(--textosecao);
 }
 
 .card-text>p {
     color: var(--preto);
     text-align: center;
+    font-size: var(--textomenor);
 }
