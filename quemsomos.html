@@ -14,17 +14,29 @@
 </head>
 
 <body>
-    <header>
-        <<header>
+    <div class="container">
+        <header>
             <div class="cabecalho">
-                <img id="imglogo" src="./img/logo.png" alt="logo" />
+                <img id="imglogo" src="img/logo.png" alt="logo" />
                 <h1>MAKING INTELIGENCE</h1>
-                <img id="menulogo" src="img/menu.svg" alt="menu" />
+                <div class="dropdown">
+                    <button class="dropbtn"><i class="fa fa-bars"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="index.html">Página Inicial</a>
+                      <a href="quemsomos.html">Quem Somos</a>
+                      <a href="automacao.html">Automação</a>
+                      <a href="ia.html">Inteligência Artificial</a>
+                      <a href="contato.html">Link 3</a>
+                    </div>
+                  </div>
             </div>
         </header>
-    </header>
     <main>
-        <h1 class="titulopg">Quem Somos</h1>
+        <div class="gap-titulo"></div>
+        <div class="titulopg">
+            <h1>Quem Somos</h1>
+        </div>
         <section class="ap-projetos">
             <div class="ap-title"><h2>Missão e Valores</h2></div>
             <p>
@@ -125,6 +137,7 @@
             <i class="fa fa-youtube"></i>
         </div>
     </footer>
+    </div>
 </body>
 
 </html>
