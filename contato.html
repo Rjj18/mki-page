@@ -10,95 +10,125 @@
     <link rel="stylesheet" href="css/icones.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/flex-grid.css">
+    <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <div class="cabecalho">
-                <img id="imglogo" src="img/logo.png" alt="logo" />
-                <h1>MAKING INTELIGENCE</h1>
-                <div class="dropdown">
-                    <button class="dropbtn"><i class="fa fa-bars"></i>
-                    </button>
-                    <div class="dropdown-content">
-                      <a href="index.html">Página Inicial</a>
-                      <a href="quemsomos.html">Quem Somos</a>
-                      <a href="automacao.html">Automação</a>
-                      <a href="ia.html">Inteligência Artificial</a>
-                      <a href="contato.html">Contato</a>
-                    </div>
-                  </div>
+    <header>
+        <div class="cabecalho">
+            <img id="imglogo" src="img/logo.png" alt="logo" />
+            <h1>MAKING INTELIGENCE</h1>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fa fa-bars"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="index.html">Página Inicial</a>
+                    <a href="quemsomos.html">Quem Somos</a>
+                    <a href="automacao.html">Automação</a>
+                    <a href="ia.html">Inteligência Artificial</a>
+                    <a href="contato.html">Contato</a>
+                </div>
             </div>
-        </header>
-        <main>
-            <div class="gap-titulo"></div>
-            <div class="titulopg">
-                <h1>Contato</h1>
+        </div>
+    </header>
+    <main>
+        <div class="gap-titulo"></div>
+        <div class="titulopg">
+            <h1>Contato</h1>
+        </div>
+        <div class="gap-titulo"></div>
+        <section>
+            <div class="contato1">
+                <h2>Fale Conosco</h2>
             </div>
-            <div class="gap-titulo"></div>
-            <section>
+            <div class="container">
                 <form>
-                    <label for="nome">Nome Completo</label>
-                    <input type="text" name="nome_complto" placeholder="Nome Completo" id="nome">
-                    <br><br>
-                    <label for="estado">Estado</label>
-                    <input type="text" name="estado" placeholder="Estado">
-                    <br><br>
-                    <label for="cidade">Cidade</label>
-                    <input type="cidade" name="cidade" placeholder="Cidade">
-                    <br><br>
-                    <label for="email">E-mail</label>
-                    <input type="email" name="emailUsuario" id="email" placeholder="Ex.:email@email.com">
-                    <br><br>
-                    <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" name="Telefone" placeholder="Ex.:(xx) xxxx-xxxx">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Last Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="country">Country</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="country" name="country">
+                                <option value="australia">Australia</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="subject" name="subject" placeholder="Write something.."
+                                style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
                 </form>
-                <br><br>
-                <button type="submit">Enviar</button>
-            </section>
-            <section>
-                <div>
-                    <h2>Assine nossa newsletter</h2>
-                </div>
-                <div>
-                    <form>
-                        <label for="nome">Nome completo</label>
-                        <input type="text" id="nome">
-                        <label for="email">E-mail</label>
-                        <input type="text" id="email">
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-            </section>
-        </main>
-        <footer class="rodape">
-            <h3>MKI - Making Inteligence Soluções em Tecnologia</h3>
-            <p> &#xA9 Todos os Direitos Reservados - Copyright 2022</p>
-            <div class="mki-info">
-                <h3 style="color: black;">Matriz</h3>
-                <div class="info-card"> <i class="fa fa-map-marker"></i>
-                    <p>Rua Martinico Braga, 150 - Sala 7
-                        Vila Mascote - Centro/SP - 06823 420</p>
-                </div>
-                <div class="info-card"> <i class="fa fa-envelope-o"></i>
-                    <p>contato@,mkinteligence.com.br</p>
-                </div>
-                <div class="info-card"> <i class="fa fa-phone"></i>
-                    <a href="tel:+551147153265">+551147153265</a>
-                </div>
             </div>
-            <p>Siga-nos em nossas Redes Sociais</p>
-            <div class="social">
-                <i class="fa fa-facebook-square"></i>
-                <i class="fa fa-linkedin-square"></i>
-                <i class="fa fa-twitter-square"></i>
-                <i class="fa fa-google"></i>
-                <i class="fa fa-youtube"></i>
+        </section>
+        <div class="gap"></div>
+        <section>
+            <div class="newsletter">
+                <h3>Assine Nossa Newsletter</h3>
+                <form action="">
+                    <div class="input">
+                        <input type="text" placeholder="Name" name="name" required>
+                    </div>
+                    <div class="input"><input type="text" placeholder="Email address" name="mail" required></div>
+                    <div class="input"><input type="submit" value="Subscribe"></div>
+                </form>
             </div>
-        </footer>
-    </div>
+        </section>
+    </main>
+
+
+
+    <footer class="rodape">
+        <h3>MKI - Making Inteligence Soluções em Tecnologia</h3>
+        <p> &#xA9 Todos os Direitos Reservados - Copyright 2022</p>
+        <div class="mki-info">
+            <h3 style="color: black;">Matriz</h3>
+            <div class="info-card"> <i class="fa fa-map-marker"></i>
+                <p>Rua Martinico Braga, 150 - Sala 7
+                    Vila Mascote - Centro/SP - 06823 420</p>
+            </div>
+            <div class="info-card"> <i class="fa fa-envelope-o"></i>
+                <p>contato@,mkinteligence.com.br</p>
+            </div>
+            <div class="info-card"> <i class="fa fa-phone"></i>
+                <a href="tel:+551147153265">+551147153265</a>
+            </div>
+        </div>
+        <p>Siga-nos em nossas Redes Sociais</p>
+        <div class="social">
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-linkedin-square"></i>
+            <i class="fa fa-twitter-square"></i>
+            <i class="fa fa-google"></i>
+            <i class="fa fa-youtube"></i>
+        </div>
+    </footer>
 </body>
 
 </html>

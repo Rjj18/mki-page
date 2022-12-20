@@ -159,3 +159,15 @@ font-size: var(--textomenor);
     text-align: center;
     font-size: var(--textomenor);
 }
+
+/* contato */
+
+.newsletter{
+    background-color: var(--cinza);
+}
+
+.newsletter>h3{
+    font-size: var(--titulo2);
+    text-align: center;
+    color:var(--branco);
+}
