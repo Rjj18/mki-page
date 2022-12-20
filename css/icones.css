@@ -50,7 +50,8 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  top:24px;
+  top:36px;
+  right:8px;
   background-color: var(--azul);
 }
 .dropdown-content a {
