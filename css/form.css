@@ -26,7 +26,7 @@ input[type=text], select, textarea{
   }
   
   /* Style the container */
-  .container {
+  .form-contato {
     border-radius: 5px;
     background-color: rgb(55,63,69);
     padding: 20px;

@@ -16,8 +16,8 @@ p, a, h1, h2, h3, h4, h5, h6 {
     --azul: #3182AF;
     --azul-escuro: rgb(2,24,59);
     --titulo1: 24px;
-    --titulo2: 20px;
-    --textosecao: 16px;
+    --titulo2:20px;
+    --textosecao:14px;
     --textomenor:12px;
 }
 
@@ -47,11 +47,6 @@ align-items: center;
 text-align: center;
 background-image: url(../img/fundo-quem.png);
 padding: 4px;
-height: 90vh;
-}
-
-.quem-somos>p {
-    font-size: var(--textosecao);
 }
 
 
@@ -100,9 +95,6 @@ border-radius: 8px;
     font-size: var(--titulo2);
 }
 
-.ap-projetos>p {
-    font-size: var();
-}
 
 .clientes>h3 {
     text-align: center;
