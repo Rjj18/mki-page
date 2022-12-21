@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/icones.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/flex-grid.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+    <header>
+        <div class="cabecalho">
+            <img id="imglogo" src="img/logo.png" alt="logo" />
+            <h1>MAKING INTELIGENCE</h1>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fa fa-bars"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="index.html">Página Inicial</a>
+                    <a href="quemsomos.html">Quem Somos</a>
+                    <a href="automacao.html">Automação</a>
+                    <a href="ia.html">Inteligência Artificial</a>
+                    <a href="contato.html">Contato</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="gap-titulo"></div>
+        <div class="titulopg">
+            <h1>Contato</h1>
+        </div>
+        <div class="gap-titulo"></div>
+        <section>
+            <div class="contato1">
+                <h2>Fale Conosco</h2>
+            </div>
+            <div class="form-contato">
+                <form>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">Primeiro Nome</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Seu nome..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Sobrenome</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="lastname" placeholder="Seu sobrenome..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">Telefone</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="tel" id="phone" name="telefone" placeholder="Telefone para contato">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">E-mail</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="email" id="email" name="email" placeholder="Seu e-mail">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject">Assunto</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="subject" name="subject" placeholder="Escreva algo.."
+                                style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <div class="gap"></div>
+        <section>
+            <div class="newsletter">
+                <h3>Assine Nossa Newsletter</h3>
+                <form action="">
+                    <div class="input">
+                        <input type="text" placeholder="Nome" name="name" required>
+                    </div>
+                    <div class="input"><input type="text" placeholder="e-mail" name="mail" required></div>
+                    <div class="input"><input type="submit" value="Assine"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <h3>MKI - Making Inteligence Soluções em Tecnologia</h3>
+        <p> &#xA9 Todos os Direitos Reservados - Copyright 2022</p>
+        <div class="mki-info">
+            <h3 style="color: black;">Matriz</h3>
+            <div class="info-card"> <i class="fa fa-map-marker"></i>
+                <p>Rua Martinico Braga, 150 - Sala 7
+                    Vila Mascote - Centro/SP - 06823 420</p>
+            </div>
+            <div class="info-card"> <i class="fa fa-envelope-o"></i>
+                <p>contato@,mkinteligence.com.br</p>
+            </div>
+            <div class="info-card"> <i class="fa fa-phone"></i>
+                <a href="tel:+551147153265">+551147153265</a>
+            </div>
+        </div>
+        <p>Siga-nos em nossas Redes Sociais</p>
+        <div class="social">
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-linkedin-square"></i>
+            <i class="fa fa-twitter-square"></i>
+            <i class="fa fa-google"></i>
+            <i class="fa fa-youtube"></i>
+        </div>
+    </footer>
+</div>
+</body>
+
+</html>

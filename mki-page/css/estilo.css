@@ -1,0 +1,155 @@
+/* Fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Hind+Siliguri:wght@300&family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Open+Sans:wght@300&display=swap');
+/* Variáveis de cores e tamanhos de fonte */
+
+p, a, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif !important;
+    color: var(--branco);
+}
+
+:root {
+    --cinza: rgb(55,63,69);
+    --branco: white;
+    --preto:black;
+    --azul: #3182AF;
+    --azul-escuro: rgb(2,24,59);
+    --titulo1: 24px;
+    --titulo2:20px;
+    --textosecao:14px;
+    --textomenor:12px;
+}
+
+.cabecalho>h1 {
+    font-size:var(--titulo1);
+    color: var(--preto);
+}
+
+#imglogo {
+width: 44px;
+height: 40px;
+}
+
+.titulopg>h1{
+    font-size: var(--titulo1);
+    color: var(--preto);
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.quem-somos {
+    font-size: var(--textosecao) !important;
+}
+  
+
+/* Configurações dos botões principais */
+
+.botao-lg{
+display: flex;
+padding: 8px;
+background-color: var(--azul);
+border-radius: 8px;
+}
+
+.botao-lg>a{
+    text-decoration: none;
+    font-size: var(--textosecao);
+    }
+
+
+/* divisão entre seção */
+
+.gap{
+    background-color: var(--branco);
+    width: 100vw;
+    height: 2px;
+}
+
+.gap-titulo{
+    background-color: var(--cinza);
+    width: 100vw;
+    height: 2px;
+}
+
+
+/* Classes Principais */
+
+.ap-projetos {
+    background-color: var(--cinza);
+    text-align: justify;
+}
+.ap-title {
+    border-bottom: solid 1px white;
+}
+
+.ap-projetos>p{
+    font-size: var(--textosecao) !important;
+}
+.ap-projetos>h3 {
+    font-size: var(--titulo2);
+}
+
+.clientes>h3 {
+    text-align: center;
+    color: var(--preto);
+}
+
+.rodape>h3 {
+    font-size: var(--textosecao);
+}
+
+.rodape>p{
+    font-size: var(--textomenor);
+}
+.rodape>p, .rodape>h3 {
+    text-align: center;
+    color: var(--preto);
+}
+
+.info-card>p, .info-card>a {
+color: black; 
+align-self: center;
+text-decoration: none;
+font-size: var(--textomenor);
+}
+
+
+/* cards carrossel */
+
+.card-projetos>h2 {
+    text-align: center;
+    color: var(--preto);
+    font-size: var(--titulo2);
+    margin-top: 8px;
+}
+.card{
+    margin: 4px;
+}
+
+.card-image {
+    margin: 4px;
+}
+.card-title>h3 {
+    color: var(--preto);
+    text-align: center;
+    font-size: var(--textosecao);
+}
+
+.card-text>p {
+    color: var(--preto);
+    text-align: center;
+    font-size: var(--textomenor);
+}
+
+/* contato */
+
+.newsletter{
+    background-color: var(--cinza);
+}
+
+.newsletter>h3{
+    font-size: var(--titulo2);
+    text-align: center;
+    color:var(--branco);
+}
