@@ -1,3 +1,7 @@
+.container{
+    width: 98vw;
+}
+
 .cabecalho {
     display: flex;
     flex-direction: row;
@@ -16,6 +20,7 @@
     text-align:justify;
     background-image: url(../img/fundo-quem.png);
     height: 90vh;
+    padding: 4px;
     }
 
 
@@ -82,7 +87,6 @@ padding: 8px;
     gap: 8px;
 }
 
-
 .mki-info {
     display: grid;
     grid-template-areas:
@@ -123,18 +127,4 @@ grid-area: titulo;
     display: flex; 
     flex-direction: row; 
     justify-content: baseline;
-}
-
-
-@media screen and (min-width: 768px) {
-    .container{
-        display: grid;
-        grid-template-areas:
-        "cab-lg cab-lg cab-lg cab-lg"
-        "quem-lg quem-lg quem-lg quem-lg"
-        "prj1-lg prj1-lg prj2-lg prj2-lg"
-        "cli-lg cli-lg cont-lg cont-lg"
-        "foot-lg foot-lg foot-lg foot-lg";                                                                                              
-    }
-    
 }

@@ -39,17 +39,6 @@ height: 40px;
 }
   
 
-.quem-somos{
-display: flex;
-flex-direction: column;
-justify-content:space-around;
-align-items: center;
-text-align: center;
-background-image: url(../img/fundo-quem.png);
-padding: 4px;
-}
-
-
 /* Configurações dos botões principais */
 
 .botao-lg{

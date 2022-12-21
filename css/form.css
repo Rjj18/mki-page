@@ -62,13 +62,11 @@ input[type=text], select, textarea{
   }
 
   /* Newsletter */
-
   .newsletter{
         border-radius: 5px;
         background-color: rgb(55,63,69);
         padding: 20px;
   }
-
   .input {
     margin: 8px 0 8px 0;
   }
