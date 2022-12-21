@@ -37,6 +37,10 @@ height: 40px;
     text-align: center;
     margin-bottom: 4px;
 }
+
+.quem-somos {
+    font-size: var(--textosecao) !important;
+}
   
 
 /* Configurações dos botões principais */
@@ -50,6 +54,7 @@ border-radius: 8px;
 
 .botao-lg>a{
     text-decoration: none;
+    font-size: var(--textosecao);
     }
 
 
@@ -75,8 +80,11 @@ border-radius: 8px;
     text-align: justify;
 }
 .ap-title {
-    border: solid 1px white;
-    border-radius: 8px;
+    border-bottom: solid 1px white;
+}
+
+.ap-projetos>p{
+    font-size: var(--textosecao) !important;
 }
 .ap-projetos>h3 {
     font-size: var(--titulo2);
