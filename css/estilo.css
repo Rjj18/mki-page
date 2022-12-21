@@ -74,16 +74,13 @@ border-radius: 8px;
     background-color: var(--cinza);
     text-align: justify;
 }
-
 .ap-title {
     border: solid 1px white;
     border-radius: 8px;
 }
-
 .ap-projetos>h3 {
     font-size: var(--titulo2);
 }
-
 
 .clientes>h3 {
     text-align: center;
@@ -109,9 +106,6 @@ text-decoration: none;
 font-size: var(--textomenor);
 }
 
-/* Titulo pagina */
-
-
 
 /* cards carrossel */
 
@@ -121,7 +115,6 @@ font-size: var(--textomenor);
     font-size: var(--titulo2);
     margin-top: 8px;
 }
-
 .card{
     margin: 4px;
 }
