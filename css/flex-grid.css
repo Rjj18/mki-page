@@ -1,0 +1,127 @@
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 30%;
+    background-color: var(--branco);
+    padding: 4px 0 4px 0;
+}
+
+.quem-somos{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+    text-align:justify;
+    background-image: url(../img/fundo-quem.png);
+    height: 90vh;
+    padding: 4px;
+    }
+
+
+.ap-projetos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap:16px;
+    padding: 8px;
+    height: 40%;
+}
+
+.ap-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding: 8px;
+    margin-top: 8px;
+}
+
+/* grid clientes */
+
+.clientes {
+    display:grid;
+    grid-template-areas: 
+        "titulo titulo"
+        "imagem1 imagem2"
+        "imagem3 imagem4"; 
+justify-items: center;
+gap: 8px;
+padding: 8px;
+}
+
+.clientes :nth-child(1) {
+    grid-area: titulo;
+    grid-row: 3fr;
+}
+
+.clientes :nth-child(2) {
+    grid-area: imagem1;
+}
+
+.clientes :nth-child(3) {
+    grid-area: imagem2;
+}
+
+.clientes :nth-child(4) {
+    grid-area: imagem3;
+}
+
+.clientes :nth-child(5) {
+    grid-area: imagem4;
+}
+
+/* elementos rodape */
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.mki-info {
+    display: grid;
+    grid-template-areas:
+    "titulo titulo"
+    "endereco endereco"
+    "telefone email";
+
+justify-items: center;
+}
+
+.mki-info :nth-child(1){
+grid-area: titulo;    
+}
+
+.mki-info :nth-child(2){
+    grid-area: endereco;    
+}
+
+.mki-info :nth-child(3){
+        grid-area: telefone;
+}
+
+.mki-info :nth-child(4){
+    grid-area: email;
+}
+
+
+/* Cards carrossel */
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    padding-top: 16px;
+    gap: 16px;
+}
+
+.info-card {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: baseline;
+}
