@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/flex-grid.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -20,9 +21,10 @@
                 <img id="imglogo" src="img/logo.png" alt="logo" />
                 <h1>MAKING INTELIGENCE</h1>
                 <div class="dropdown">
-                    <button class="dropbtn"><i class="fa fa-bars"></i>
+                    <button class="dropbtn" id="menuAbrir" onclick="aparecer ()"><i class="fa fa-bars"></i>
                     </button>
-                    <div class="dropdown-content">
+                    <button class="dropbtn" id="fechar" onclick="sumir()"><i class="fa fa-window-close"></i></button>
+                    <div class="dropdown-content" id="menuP">
                       <a href="index.html">Página Inicial</a>
                       <a href="quemsomos.html">Quem Somos</a>
                       <a href="automacao.html">Automação</a>
