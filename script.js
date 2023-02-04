@@ -16,26 +16,44 @@ function sumir () {
 
 // Validação dos Fomulários
 
-//Validação Formulário de Contato
+//Chave para validação do e-mail;
+const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
+//Validação Formulário de Contato
 const submitForm1 = document.getElementById("form1");
 const erroForm1 = document.getElementsByClassName("valid1");
+let msgErro1 = false;
+
+submitForm1.addEventListener("submit", function (e) {
+    for (let i = 0; i < erroForm1.length; i++) {
+        if (erroForm1[i].value == "") {
+            e.preventDefault();
+            msgErro1 = true;
+        } else {
+            msgErro1 = false;
+        }
+    } 
+    if (msgErro1 == true) {
+        e.preventDefault();
+        alert("Digite algo")
+    } else {
+        msgErro1 = true;
+    }
+})
+
+
 
 //Validação Newsletter
 const nomeForm2 = document.getElementById("nomeNews");
 const emailForm2 = document.getElementById("emailNews");
 const submitForm2 = document.getElementById("form2");
 const erroEmail = document.getElementById("erroMail2");
-
-
-const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
-let msgErro = false;
+let msgErro2 = false;
 
 
 
 submitForm2.addEventListener("submit", function (event) {
-    if (nomeForm2.value == "" || msgErro == true) {
+    if (nomeForm2.value == "" || msgErro2 == true) {
         alert("O formulário possui erros e não pode ser enviado")
         nomeForm2.style.backgroundColor = "pink"
         event.preventDefault()
@@ -49,11 +67,11 @@ emailForm2.addEventListener("blur", function (event) {
     if (emailForm2.value.match(validRegex)) {
         emailForm2.style.backgroundColor = "green";
         erroEmail.style.display = "none";
-        msgErro = false;       
+        msgErro2 = false;       
     } else {
         emailForm2.style.backgroundColor = "pink";
         erroEmail.style.display = "block";
-        msgErro = true;     
+        msgErro2 = true;     
     }
 })
 
