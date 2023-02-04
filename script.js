@@ -19,6 +19,7 @@ function sumir () {
 //Validação Formulário de Contato
 
 const submitForm1 = document.getElementById("form1");
+const erroForm1 = document.getElementsByClassName("valid1");
 
 //Validação Newsletter
 const nomeForm2 = document.getElementById("nomeNews");
