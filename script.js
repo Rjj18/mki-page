@@ -24,7 +24,7 @@ const submitForm1 = document.getElementById("form1");
 const nomeForm2 = document.getElementById("nomeNews");
 const emailForm2 = document.getElementById("emailNews");
 const submitForm2 = document.getElementById("form2");
-const erroEmail = document.getElementById("erroMail");
+const erroEmail = document.getElementById("erroMail2");
 
 
 const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
