@@ -46,13 +46,13 @@
                 <h2>Fale Conosco</h2>
             </div>
             <div class="form-contato">
-                <form>
+                <form id="form1" action="#">
                     <div class="row">
                         <div class="col-25">
                             <label for="fname">Primeiro Nome</label>
                         </div>
                         <div class="col-75">
-                            <input type="text" id="fname" name="firstname" placeholder="Seu nome..">
+                            <input class="valid1" type="text" id="fname" name="firstname" placeholder="Seu nome..">
                         </div>
                     </div>
                     <div class="row">
@@ -60,7 +60,7 @@
                             <label for="lname">Sobrenome</label>
                         </div>
                         <div class="col-75">
-                            <input type="text" id="lname" name="lastname" placeholder="Seu sobrenome..">
+                            <input class="valid1" type="text" id="lname" name="lastname" placeholder="Seu sobrenome..">
                         </div>
                     </div>
                     <div class="row">
@@ -68,7 +68,7 @@
                             <label for="fname">Telefone</label>
                         </div>
                         <div class="col-75">
-                            <input type="tel" id="phone" name="telefone" placeholder="Telefone para contato">
+                            <input id="tel1" class="valid1" type="tel" id="phone" name="telefone" placeholder="Telefone para contato">
                         </div>
                     </div>
                     <div class="row">
@@ -76,7 +76,7 @@
                             <label for="fname">E-mail</label>
                         </div>
                         <div class="col-75">
-                            <input type="email" id="email" name="email" placeholder="Seu e-mail">
+                            <input class="valid1" id="erroMail1" type="text" name="email" placeholder="Seu e-mail">
                         </div>
                     </div>
                     <div class="row">
@@ -84,12 +84,12 @@
                             <label for="subject">Assunto</label>
                         </div>
                         <div class="col-75">
-                            <textarea id="subject" name="subject" placeholder="Escreva algo.."
+                            <textarea class="valid1" id="subject" name="subject" placeholder="Escreva algo.."
                                 style="height:200px"></textarea>
                         </div>
                     </div>
                     <div class="row">
-                        <input type="submit" value="Enviar">
+                        <input id="submit1" type="submit" value="Enviar">
                     </div>
                 </form>
             </div>
@@ -98,11 +98,12 @@
         <section>
             <div class="newsletter">
                 <h3>Assine Nossa Newsletter</h3>
-                <form id="form2" action="#    ">
+                <form id="form2" action="#">
                     <div class="input">
-                        <input id="nomeNews" type="text" placeholder="Nome" name="name">
+                        <input id="nomeNews" class="valid2" type="text" placeholder="Nome" name="name">
                     </div>
-                    <div class="input"><input id="emailNews"  type="text" placeholder="e-mail" name="email"></div>
+                    <div class="input"><input id="emailNews" class="valid2" type="text" placeholder="e-mail" name="email"></div>
+                    <div id="erroMail2"><p>Digite um email válido</p></div>
                     <div class="input"><input type="submit" name="submit" value="Assine"></div>
                 </form>
             </div>
