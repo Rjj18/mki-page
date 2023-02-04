@@ -16,15 +16,19 @@ function sumir () {
 
 // Validação dos Fomulários
 
-let nomeForm2 = document.getElementById("nomeNews");
-let emailForm2 = document.getElementById("emailNews");
-let submitForm2 = document.getElementById("form2");
+const nomeForm2 = document.getElementById("nomeNews");
+const emailForm2 = document.getElementById("emailNews");
+const submitForm2 = document.getElementById("form2");
+const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+const erroEmail = document.getElementById("erroMail");
 
-let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+let msgErro = false;
+
+
 
 submitForm2.addEventListener("submit", function (event) {
     if (nomeForm2.value == "") {
-        alert("digite algo")
+        alert("O formulário não deve conter campos vazios")
         nomeForm2.style.backgroundColor = "pink"
         event.preventDefault()
     } else {
@@ -32,13 +36,24 @@ submitForm2.addEventListener("submit", function (event) {
     }
 })
 
-// submitForm2.addEventListener("submit", function (event) {
-//     if (emailForm2.value.match(validRegex)) {
-//     } else {
-//         event.preventDefault()
-//         alert("Digite um e-mail válido")
-//     }
-// })
+
+
+emailForm2.addEventListener("blur", function (event) {
+    if (emailForm2.value.match(validRegex)) {
+        emailForm2.style.backgroundColor = "green";
+        if (msgErro == true) {
+            erroEmail.style.display = "none"
+            msgErro = false;
+        }
+    } else {
+        event.preventDefault()
+        emailForm2.style.backgroundColor = "pink"
+        if (msgErro == false) {
+            erroEmail.style.display = "block"
+            msgErro = true;
+        }
+    }
+})
 
 
 
