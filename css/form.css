@@ -85,7 +85,7 @@ input[type=text], select, textarea{
 
   /* Validação de formulário */
 
-#erroMail2 {
+#erroMail1, #erroMail2 {
   font-size: 12px;
   font-style: italic;
   display: none;
