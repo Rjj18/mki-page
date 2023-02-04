@@ -16,19 +16,26 @@ function sumir () {
 
 // Validação dos Fomulários
 
+//Validação Formulário de Contato
+
+const submitForm1 = document.getElementById("form1");
+
+//Validação Newsletter
 const nomeForm2 = document.getElementById("nomeNews");
 const emailForm2 = document.getElementById("emailNews");
 const submitForm2 = document.getElementById("form2");
-const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 const erroEmail = document.getElementById("erroMail");
+
+
+const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 let msgErro = false;
 
 
 
 submitForm2.addEventListener("submit", function (event) {
-    if (nomeForm2.value == "") {
-        alert("O formulário não deve conter campos vazios")
+    if (nomeForm2.value == "" || msgErro == true) {
+        alert("O formulário possui erros e não pode ser enviado")
         nomeForm2.style.backgroundColor = "pink"
         event.preventDefault()
     } else {
@@ -37,23 +44,26 @@ submitForm2.addEventListener("submit", function (event) {
 })
 
 
-
 emailForm2.addEventListener("blur", function (event) {
     if (emailForm2.value.match(validRegex)) {
         emailForm2.style.backgroundColor = "green";
-        if (msgErro == true) {
-            erroEmail.style.display = "none"
-            msgErro = false;
-        }
+        erroEmail.style.display = "none";
+        msgErro = false;       
     } else {
-        event.preventDefault()
-        emailForm2.style.backgroundColor = "pink"
-        if (msgErro == false) {
-            erroEmail.style.display = "block"
-            msgErro = true;
-        }
+        emailForm2.style.backgroundColor = "pink";
+        erroEmail.style.display = "block";
+        msgErro = true;     
     }
 })
 
 
 
+// if (msgErro == true) {
+        //     erroEmail.style.display = "none"
+        //     msgErro = false;
+        // }
+
+// if (msgErro == false) {
+        //     erroEmail.style.display = "block"
+        //     msgErro = true;
+        // }
