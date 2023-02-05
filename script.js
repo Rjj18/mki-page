@@ -38,25 +38,11 @@ submitForm1.addEventListener("submit", function (e) {
     } 
     if (msgErro1 == true) {
         e.preventDefault();
-        alert("O formulário possui erros que não permite o envio")
+        alert("O formulário não pode conter campos vazios")
     } else {
         msgErro1 = true;
     }
 })
-
-// emailForm1.addEventListener("blur", function (event) {
-//     if (emailForm1.value.match(validRegex)) {
-//         emailForm1.style.backgroundColor = "green";
-//         erroEmail.style.display = "none";
-//         msgErro2 = false;       
-//     } else {
-//         emailForm2.style.backgroundColor = "pink";
-//         erroEmail.style.display = "block";
-//         msgErro2 = true;     
-//     }
-// })
-
-
 
 //Validação Newsletter
 const nomeForm2 = document.getElementById("nomeNews");
@@ -64,8 +50,6 @@ const emailForm2 = document.getElementById("emailNews");
 const submitForm2 = document.getElementById("form2");
 const erroEmail2 = document.getElementById("erroMail2");
 let msgErro2 = false;
-
-
 
 submitForm2.addEventListener("submit", function (event) {
     if (nomeForm2.value == "" || msgErro2 == true) {
@@ -91,13 +75,3 @@ emailForm2.addEventListener("blur", function (event) {
 })
 
 
-
-// if (msgErro == true) {
-        //     erroEmail.style.display = "none"
-        //     msgErro = false;
-        // }
-
-// if (msgErro == false) {
-        //     erroEmail.style.display = "block"
-        //     msgErro = true;
-        // }
