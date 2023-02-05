@@ -17,6 +17,7 @@ function sumir () {
 // Validação dos Fomulários
 
 //Chave para validação do e-mail;
+
 const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 //Validação Formulário de Contato
@@ -40,7 +41,7 @@ submitForm1.addEventListener("submit", function (e) {
         e.preventDefault();
         alert("O formulário não pode conter campos vazios")
     } else {
-        msgErro1 = true;
+        msgErro1 = false;
     }
 })
 
@@ -55,6 +56,8 @@ submitForm2.addEventListener("submit", function (event) {
     if (nomeForm2.value == "" || msgErro2 == true) {
         alert("O formulário possui erros e não pode ser enviado")
         nomeForm2.style.backgroundColor = "pink"
+        emailForm2.style.backgroundColor = "pink";
+        erroEmail2.style.display = "block";
         event.preventDefault()
     } else {
         nomeForm2.style.backgroundColor = "green"
