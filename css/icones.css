@@ -55,25 +55,24 @@
   display: none;
   position: absolute;
   top:36px;
-  right:8px;
+  right: 1px;
   background-color: var(--azul);
+  opacity: 0.9;
+  width: 100vw;
+  height: 98vh;
 }
 .dropdown-content a {
   /* float: none; */
   color: black;
+  font-weight: bold;
   padding: 12px 16px;
-  text-decoration: none;
   display: block;
   text-align: left;
 }
 
 #fechar {
-  position: absolute;
+  /* position: absolute; */
   top: 0px;
   right: 0px;
   display: none;
 }
-
-/* .dropdown:hover .dropdown-content {
-  display: block;
-} */
