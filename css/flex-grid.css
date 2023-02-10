@@ -11,11 +11,11 @@
 .quem-somos{
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: space-evenly;
     align-items:center;
     text-align:justify;
     background-image: url(../img/fundo-quem.png);
-    height: 90vh;
+    height: 70vh;
     padding: 4px;
     }
 
@@ -27,7 +27,7 @@
     align-items: center;
     gap:16px;
     padding: 8px;
-    height: 40%;
+    height: 25vh;
 }
 
 .ap-title{
@@ -80,32 +80,28 @@ padding: 8px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
 }
 
 .mki-info {
     display: grid;
     grid-template-areas:
-    "titulo titulo"
     "endereco endereco"
     "telefone email";
 
 justify-items: center;
 }
 
-.mki-info :nth-child(1){
-grid-area: titulo;    
-}
 
-.mki-info :nth-child(2){
+.mki-info :nth-child(1){
     grid-area: endereco;    
 }
 
-.mki-info :nth-child(3){
+.mki-info :nth-child(2){
         grid-area: telefone;
 }
 
-.mki-info :nth-child(4){
+.mki-info :nth-child(3){
     grid-area: email;
 }
 
