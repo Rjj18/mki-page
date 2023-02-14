@@ -15,7 +15,7 @@
     align-items:center;
     text-align:justify;
     background-image: url(../img/fundo-quem.png);
-    height: 70vh;
+    height: 90vh;
     padding: 4px;
     }
 
@@ -27,7 +27,7 @@
     align-items: center;
     gap:16px;
     padding: 8px;
-    height: 25vh;
+    /* height: 25vh; */
 }
 
 .ap-title{
