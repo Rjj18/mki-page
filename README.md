@@ -50,6 +50,6 @@ npm install
 # Execute o projeto localmente
 npm start
 
-##Licença
+## Configuração do Ambiente
 
-##Contato
+Descreva os passos necessários para configurar e executar o projeto localmente. Por exemplo:
