@@ -37,7 +37,7 @@ Estamos abertos a contribuições! Se você deseja melhorar a página MKI, siga 
 
 Descreva os passos necessários para configurar e executar o projeto localmente. Por exemplo:
 
-```bash
+~~~bash
 # Clone o repositório
 git clone https://github.com/Rjj18/mki-page.git
 
@@ -49,5 +49,9 @@ npm install
 
 # Execute o projeto localmente
 npm start
+~~~
 
-´´´
+## Licença
+
+## Contato
+
