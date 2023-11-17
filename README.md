@@ -49,6 +49,5 @@ npm install
 
 # Execute o projeto localmente
 npm start
-´´´
 
-## Licença
+´´´
